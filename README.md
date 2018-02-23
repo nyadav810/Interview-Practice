@@ -1,15 +1,18 @@
 # Interview Practice - Java
 
-I. Algorithms
-a. Search
-b. Sorting
+##I. Algorithms
+* Search
+    * [Binary Search](https://github.com/nyadav810/Interview-Practice/blob/master/src/algorithms/search/binary/BinarySearch.java)
+    * Breadth First Search
+    * Depth First Search
+* Sorting
 
-II. Data Structures
-a. Array
-b. Linked List
-c. Stack
-d. Queue
-e. Hash Table
-f. Tree
-g. Graph
-h. Heap
+##II. Data Structures
+* Array
+* Linked List
+* Stack
+* Queue
+* Hash Table
+* Tree
+* Graph
+* Heap
