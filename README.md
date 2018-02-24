@@ -6,6 +6,7 @@
     * Breadth First Search
     * Depth First Search
 * Sorting
+    * [Merge Sort](https://github.com/nyadav810/Interview-Practice/blob/master/src/algorithms/sort/merge/MergeSort.java)
 
 ## II. Data Structures
 * Array
