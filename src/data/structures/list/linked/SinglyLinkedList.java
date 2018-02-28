@@ -1,8 +1,10 @@
-package data.structures.linked.list;
+package data.structures.list.linked;
 
 import java.util.Arrays;
 
-public class SinglyLinkedList implements List {
+import data.structures.list.List;
+
+public class SinglyLinkedList { //implements List {
     class Node {
         private int data;
         private Node next;
@@ -44,6 +46,10 @@ public class SinglyLinkedList implements List {
             current.next = new Node(n);
         }
         size++;
+    }
+
+    public void add(int index, int n) {
+
     }
 
     public void remove(int n) {
