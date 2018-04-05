@@ -1,7 +1,8 @@
 package data.structures.tree;
 
 public class BinaryTree {
-    private class TreeNode {
+
+    class TreeNode {
         public int data;
         public TreeNode left;
         public TreeNode right;
@@ -25,6 +26,10 @@ public class BinaryTree {
     private TreeNode root;
 
     public BinaryTree(int max) {
+        if (max <= 0) {
+            throw new IllegalArgumentException("max: " + max);
+        }
+
         this.root = buildTree(1, max);
     }
 
@@ -105,11 +110,24 @@ public class BinaryTree {
         }
     }
 
+    public int sum() {
+        return sum(root);
+    }
+
+    private int sum(TreeNode root) {
+        if (root == null) {
+            return 0;
+        } else {
+            return root.data + sum(root.left) + sum(root.right);
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree(15);
-        binaryTree.printPreorder();
-        binaryTree.printInorder();
-        binaryTree.printPostorder();
-        binaryTree.printSideways();
+        //binaryTree.printPreorder();
+        //binaryTree.printInorder();
+        //binaryTree.printPostorder();
+        //binaryTree.printSideways();
+        System.out.printf("Sum: %d", binaryTree.sum());
     }
 }
